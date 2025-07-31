@@ -1,0 +1,562 @@
+[
+    {
+      "id": "Motion Primitive introduction",
+      "text_prompt": "A motion primative is a semantic definition of an atomic surgical action performed by a single instrument with an intended goal within the three-dimensional surgical space. The action occurs within the 3-dimensional instrument space and is represented in the 2-dimensional space as vis associated with a spatial This is annotated as a tuple (arm-instrument type, action verb, target object). Here is a list of the MP (motion primative) action verbs: Grasp (close grasper to hold object at specified point), Ungrasp (open grasper to release object), Cut (open and close scissors tines), Push (move with force), Pull (move with force and graspers closed), Retract ⇒ “grasp and pull”, Stabilize⇒ “touch/grasp and push”, Hook/Scoop ⇒ “push and pull” or “scoop and pull”, Expand ⇒ “push”and open graspers/ungrasp”, Wrap ⇒ “grasp and loop”.  Summarize what a motion primative is and give an example of an action triplet and think through it step by step.",
+      "video_path": null
+    },
+    {
+      "id": "Gesture introduction",
+      "text_prompt": "A gesture is a sequence or simultaneous execution of motion primitives (description augmented with start and/or goal criteria) on two hands.  Here is a list of the main tasks and their related gestures.  Dissection: Cold Cut: Goal: splitting a plane of tissue into two objects using scissors to reveal object. Hot cut: Goal: splitting a plane of tissue into two objects with coagulation of tissue to reveal object (CV algorithm detects burned tissue color for example). Two-hand Spread: Goal: penetrate with two hands and push in opposite direction to separate tissue and reveal object. One-hand Spread: Goal: penetrate with one hand, expand grasper tines to push tissue away and reveal object. Peel: Goal: pull plane of tissue off to reveal object. Cold Hook: Goal: pull band of tissue until breaks. Hot Hook: Goal: pull band of tissue and apply energy until breaks. Burn Dissect: Goal: release tissue from object using electrocautery. Pedicalize: Goal: reveal tubular structure from background tissue. Coagulate and cut: Goal: coagulate tissue and cut into two separate objects. Needle Passing: Orient Needle: Goal: pass the neefdle between hands until the needle grasped at 50% distance from tip to end. Target needle: Goal: needle tip enters at intended location. Push needle: Goal: needle tip exits tissue. Pull needle: Goal: needle end exits tissue. Pull Suture-OneHand: Grasp and pull suture with one hand. Pull Suture-BothHands: Grasp and pull suture with both hands. Pull Suture-Fulcrum: Fulcrum pull the suture.",
+      "video_path": null
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the gesture that is happening in this video? Think through it step by step.",
+        "video_path": "../Benchmark_1.0/Gestures/Dissection/Cold_Cut/Cold_Cut_1.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the gesture that is happening in this video? Think through it step by step.",
+        "video_path": "../Benchmark_1.0/Gestures/Dissection/Cold_Cut/Cold_Cut_2.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the gesture that is happening in this video? Think through it step by step.",
+        "video_path": "../Benchmark_1.0/Gestures/Dissection/Cold_Cut/Cold_Cut_3.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the gesture that is happening in this video? Think through it step by step.",
+        "video_path": "../Benchmark_1.0/Gestures/Dissection/Cold_Cut/Cold_Cut_4.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the gesture that is happening in this video? Think through it step by step.",
+        "video_path": "../Benchmark_1.0/Gestures/Dissection/Cold_Cut/Cold_Cut_5.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the gesture that is happening in this video? Think through it step by step.",
+        "video_path": "../Benchmark_1.0/Gestures/Dissection/One-hand_Spread/One-hand_Spread_1.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the gesture that is happening in this video? Think through it step by step.",
+        "video_path": "../Benchmark_1.0/Gestures/Dissection/One-hand_Spread/One-hand_Spread_2.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the gesture that is happening in this video? Think through it step by step.",
+        "video_path": "../Benchmark_1.0/Gestures/Dissection/One-hand_Spread/One-hand_Spread_3.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the gesture that is happening in this video? Think through it step by step.",
+        "video_path": "../Benchmark_1.0/Gestures/Dissection/One-hand_Spread/One-hand_Spread_4.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the gesture that is happening in this video? Think through it step by step.",
+        "video_path": "../Benchmark_1.0/Gestures/Dissection/One-hand_Spread/One-hand_Spread_5.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the gesture that is happening in this video? Think through it step by step.",
+        "video_path": "../Benchmark_1.0/Gestures/Dissection/Peel/Peel_1.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the gesture that is happening in this video? Think through it step by step.",
+        "video_path": "../Benchmark_1.0/Gestures/Dissection/Peel/Peel_2.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the gesture that is happening in this video? Think through it step by step.",
+        "video_path": "../Benchmark_1.0/Gestures/Dissection/Peel/Peel_3.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the gesture that is happening in this video? Think through it step by step.",
+        "video_path": "../Benchmark_1.0/Gestures/Dissection/Peel/Peel_4.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the gesture that is happening in this video? Think through it step by step.",
+        "video_path": "../Benchmark_1.0/Gestures/Dissection/Two-hand_Spread/Two-hand_Spread_1.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the gesture that is happening in this video? Think through it step by step.",
+        "video_path": "../Benchmark_1.0/Gestures/Dissection/Two-hand_Spread/Two-hand_Spread_2.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the gesture that is happening in this video? Think through it step by step.",
+        "video_path": "../Benchmark_1.0/Gestures/Dissection/Two-hand_Spread/Two-hand_Spread_3.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the gesture that is happening in this video? Think through it step by step.",
+        "video_path": "../Benchmark_1.0/Gestures/Dissection/Two-hand_Spread/Two-hand_Spread_4.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the gesture that is happening in this video? Think through it step by step.",
+        "video_path": "../Benchmark_1.0/Gestures/Dissection/Two-hand_Spread/Two-hand_Spread_5.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the gesture that is happening in this video? Think through it step by step.",
+        "video_path": "../Benchmark_1.0/Gestures/Needle_Passing/Orient_Needle/Orient_Needle_1.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the gesture that is happening in this video? Think through it step by step.",
+        "video_path": "../Benchmark_1.0/Gestures/Needle_Passing/Orient_Needle/Orient_Needle_2.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the gesture that is happening in this video? Think through it step by step.",
+        "video_path": "../Benchmark_1.0/Gestures/Needle_Passing/Orient_Needle/Orient_Needle_3.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the gesture that is happening in this video? Think through it step by step.",
+        "video_path": "../Benchmark_1.0/Gestures/Needle_Passing/Orient_Needle/Orient_Needle_4.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the gesture that is happening in this video? Think through it step by step.",
+        "video_path": "../Benchmark_1.0/Gestures/Needle_Passing/Orient_Needle/Orient_Needle_5.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the gesture that is happening in this video? Think through it step by step.",
+        "video_path": "../Benchmark_1.0/Gestures/Needle_Passing/Pull_Needle/Pull_Needle_1.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the gesture that is happening in this video? Think through it step by step.",
+        "video_path": "../Benchmark_1.0/Gestures/Needle_Passing/Pull_Needle/Pull_Needle_2.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the gesture that is happening in this video? Think through it step by step.",
+        "video_path": "../Benchmark_1.0/Gestures/Needle_Passing/Pull_Needle/Pull_Needle_3.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the gesture that is happening in this video? Think through it step by step.",
+        "video_path": "../Benchmark_1.0/Gestures/Needle_Passing/Pull_Needle/Pull_Needle_4.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the gesture that is happening in this video? Think through it step by step.",
+        "video_path": "../Benchmark_1.0/Gestures/Needle_Passing/Pull_Needle/Pull_Needle_5.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the gesture that is happening in this video? Think through it step by step.",
+        "video_path": "../Benchmark_1.0/Gestures/Needle_Passing/Pull_Suture-Fulcrum/Pull_Suture-Fulcrum_1.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the gesture that is happening in this video? Think through it step by step.",
+        "video_path": "../Benchmark_1.0/Gestures/Needle_Passing/Pull_Suture-Fulcrum/Pull_Suture-Fulcrum_2.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the gesture that is happening in this video? Think through it step by step.",
+        "video_path": "../Benchmark_1.0/Gestures/Needle_Passing/Pull_Suture-Fulcrum/Pull_Suture-Fulcrum_3.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the gesture that is happening in this video? Think through it step by step.",
+        "video_path": "../Benchmark_1.0/Gestures/Needle_Passing/Pull_Suture-Fulcrum/Pull_Suture-Fulcrum_4.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the gesture that is happening in this video? Think through it step by step.",
+        "video_path": "../Benchmark_1.0/Gestures/Needle_Passing/Pull_Suture-Fulcrum/Pull_Suture-Fulcrum_5.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the gesture that is happening in this video? Think through it step by step.",
+        "video_path": "../Benchmark_1.0/Gestures/Needle_Passing/Pull_Suture-OneHand/Pull_Suture-OneHand_1.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the gesture that is happening in this video? Think through it step by step.",
+        "video_path": "../Benchmark_1.0/Gestures/Needle_Passing/Pull_Suture-OneHand/Pull_Suture-OneHand_2.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the gesture that is happening in this video? Think through it step by step.",
+        "video_path": "../Benchmark_1.0/Gestures/Needle_Passing/Pull_Suture-OneHand/Pull_Suture-OneHand_3.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the gesture that is happening in this video? Think through it step by step.",
+        "video_path": "../Benchmark_1.0/Gestures/Needle_Passing/Pull_Suture-OneHand/Pull_Suture-OneHand_4.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the gesture that is happening in this video? Think through it step by step.",
+        "video_path": "../Benchmark_1.0/Gestures/Needle_Passing/Pull_Suture-OneHand/Pull_Suture-OneHand_5.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the gesture that is happening in this video? Think through it step by step.",
+        "video_path": "../Benchmark_1.0/Gestures/Needle_Passing/Push_Needle/Push_Needle_1.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the gesture that is happening in this video? Think through it step by step.",
+        "video_path": "../Benchmark_1.0/Gestures/Needle_Passing/Push_Needle/Push_Needle_2.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the gesture that is happening in this video? Think through it step by step.",
+        "video_path": "../Benchmark_1.0/Gestures/Needle_Passing/Push_Needle/Push_Needle_3.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the gesture that is happening in this video? Think through it step by step.",
+        "video_path": "../Benchmark_1.0/Gestures/Needle_Passing/Push_Needle/Push_Needle_4.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the gesture that is happening in this video? Think through it step by step.",
+        "video_path": "../Benchmark_1.0/Gestures/Needle_Passing/Push_Needle/Push_Needle_5.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the gesture that is happening in this video? Think through it step by step.",
+        "video_path": "../Benchmark_1.0/Gestures/Needle_Passing/Target_Needle/Target_Needle_1.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the gesture that is happening in this video? Think through it step by step.",
+        "video_path": "../Benchmark_1.0/Gestures/Needle_Passing/Target_Needle/Target_Needle_2.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the gesture that is happening in this video? Think through it step by step.",
+        "video_path": "../Benchmark_1.0/Gestures/Needle_Passing/Target_Needle/Target_Needle_3.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the gesture that is happening in this video? Think through it step by step.",
+        "video_path": "../Benchmark_1.0/Gestures/Needle_Passing/Target_Needle/Target_Needle_4.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the gesture that is happening in this video? Think through it step by step.",
+        "video_path": "../Benchmark_1.0/Gestures/Needle_Passing/Target_Needle/Target_Needle_5.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the motion primitive that is happening in this video? Think through it step by step and provide an action triplet for each hand in the video.",
+        "video_path": "../Benchmark_1.0/MPs/Cut/Cut_1.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the motion primitive that is happening in this video? Think through it step by step and provide an action triplet for each hand in the video.",
+        "video_path": "../Benchmark_1.0/MPs/Cut/Cut_2.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the motion primitive that is happening in this video? Think through it step by step and provide an action triplet for each hand in the video.",
+        "video_path": "../Benchmark_1.0/MPs/Cut/Cut_3.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the motion primitive that is happening in this video? Think through it step by step and provide an action triplet for each hand in the video.",
+        "video_path": "../Benchmark_1.0/MPs/Cut/Cut_4.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the motion primitive that is happening in this video? Think through it step by step and provide an action triplet for each hand in the video.",
+        "video_path": "../Benchmark_1.0/MPs/Cut/Cut_5.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the motion primitive that is happening in this video? Think through it step by step and provide an action triplet for each hand in the video.",
+        "video_path": "../Benchmark_1.0/MPs/Cut/Cut_6.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the motion primitive that is happening in this video? Think through it step by step and provide an action triplet for each hand in the video.",
+        "video_path": "../Benchmark_1.0/MPs/Grasp/Grasp_1.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the motion primitive that is happening in this video? Think through it step by step and provide an action triplet for each hand in the video.",
+        "video_path": "../Benchmark_1.0/MPs/Grasp/Grasp_10.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the motion primitive that is happening in this video? Think through it step by step and provide an action triplet for each hand in the video.",
+        "video_path": "../Benchmark_1.0/MPs/Grasp/Grasp_2.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the motion primitive that is happening in this video? Think through it step by step and provide an action triplet for each hand in the video.",
+        "video_path": "../Benchmark_1.0/MPs/Grasp/Grasp_3.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the motion primitive that is happening in this video? Think through it step by step and provide an action triplet for each hand in the video.",
+        "video_path": "../Benchmark_1.0/MPs/Grasp/Grasp_4.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the motion primitive that is happening in this video? Think through it step by step and provide an action triplet for each hand in the video.",
+        "video_path": "../Benchmark_1.0/MPs/Grasp/Grasp_5.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the motion primitive that is happening in this video? Think through it step by step and provide an action triplet for each hand in the video.",
+        "video_path": "../Benchmark_1.0/MPs/Grasp/Grasp_6.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the motion primitive that is happening in this video? Think through it step by step and provide an action triplet for each hand in the video.",
+        "video_path": "../Benchmark_1.0/MPs/Grasp/Grasp_7.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the motion primitive that is happening in this video? Think through it step by step and provide an action triplet for each hand in the video.",
+        "video_path": "../Benchmark_1.0/MPs/Grasp/Grasp_8.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the motion primitive that is happening in this video? Think through it step by step and provide an action triplet for each hand in the video.",
+        "video_path": "../Benchmark_1.0/MPs/Grasp/Grasp_9.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the motion primitive that is happening in this video? Think through it step by step and provide an action triplet for each hand in the video.",
+        "video_path": "../Benchmark_1.0/MPs/Pull/Pull_1.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the motion primitive that is happening in this video? Think through it step by step and provide an action triplet for each hand in the video.",
+        "video_path": "../Benchmark_1.0/MPs/Pull/Pull_10.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the motion primitive that is happening in this video? Think through it step by step and provide an action triplet for each hand in the video.",
+        "video_path": "../Benchmark_1.0/MPs/Pull/Pull_2.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the motion primitive that is happening in this video? Think through it step by step and provide an action triplet for each hand in the video.",
+        "video_path": "../Benchmark_1.0/MPs/Pull/Pull_3.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the motion primitive that is happening in this video? Think through it step by step and provide an action triplet for each hand in the video.",
+        "video_path": "../Benchmark_1.0/MPs/Pull/Pull_4.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the motion primitive that is happening in this video? Think through it step by step and provide an action triplet for each hand in the video.",
+        "video_path": "../Benchmark_1.0/MPs/Pull/Pull_5.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the motion primitive that is happening in this video? Think through it step by step and provide an action triplet for each hand in the video.",
+        "video_path": "../Benchmark_1.0/MPs/Pull/Pull_6.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the motion primitive that is happening in this video? Think through it step by step and provide an action triplet for each hand in the video.",
+        "video_path": "../Benchmark_1.0/MPs/Pull/Pull_7.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the motion primitive that is happening in this video? Think through it step by step and provide an action triplet for each hand in the video.",
+        "video_path": "../Benchmark_1.0/MPs/Pull/Pull_8.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the motion primitive that is happening in this video? Think through it step by step and provide an action triplet for each hand in the video.",
+        "video_path": "../Benchmark_1.0/MPs/Pull/Pull_9.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the motion primitive that is happening in this video? Think through it step by step and provide an action triplet for each hand in the video.",
+        "video_path": "../Benchmark_1.0/MPs/Push/Push_1.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the motion primitive that is happening in this video? Think through it step by step and provide an action triplet for each hand in the video.",
+        "video_path": "../Benchmark_1.0/MPs/Push/Push_10.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the motion primitive that is happening in this video? Think through it step by step and provide an action triplet for each hand in the video.",
+        "video_path": "../Benchmark_1.0/MPs/Push/Push_2.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the motion primitive that is happening in this video? Think through it step by step and provide an action triplet for each hand in the video.",
+        "video_path": "../Benchmark_1.0/MPs/Push/Push_3.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the motion primitive that is happening in this video? Think through it step by step and provide an action triplet for each hand in the video.",
+        "video_path": "../Benchmark_1.0/MPs/Push/Push_4.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the motion primitive that is happening in this video? Think through it step by step and provide an action triplet for each hand in the video.",
+        "video_path": "../Benchmark_1.0/MPs/Push/Push_5.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the motion primitive that is happening in this video? Think through it step by step and provide an action triplet for each hand in the video.",
+        "video_path": "../Benchmark_1.0/MPs/Push/Push_6.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the motion primitive that is happening in this video? Think through it step by step and provide an action triplet for each hand in the video.",
+        "video_path": "../Benchmark_1.0/MPs/Push/Push_7.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the motion primitive that is happening in this video? Think through it step by step and provide an action triplet for each hand in the video.",
+        "video_path": "../Benchmark_1.0/MPs/Push/Push_8.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the motion primitive that is happening in this video? Think through it step by step and provide an action triplet for each hand in the video.",
+        "video_path": "../Benchmark_1.0/MPs/Push/Push_9.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the motion primitive that is happening in this video? Think through it step by step and provide an action triplet for each hand in the video.",
+        "video_path": "../Benchmark_1.0/MPs/Retract/Retract_1.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the motion primitive that is happening in this video? Think through it step by step and provide an action triplet for each hand in the video.",
+        "video_path": "../Benchmark_1.0/MPs/Retract/Retract_2.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the motion primitive that is happening in this video? Think through it step by step and provide an action triplet for each hand in the video.",
+        "video_path": "../Benchmark_1.0/MPs/Retract/Retract_3.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the motion primitive that is happening in this video? Think through it step by step and provide an action triplet for each hand in the video.",
+        "video_path": "../Benchmark_1.0/MPs/Retract/Retract_4.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the motion primitive that is happening in this video? Think through it step by step and provide an action triplet for each hand in the video.",
+        "video_path": "../Benchmark_1.0/MPs/Retract/Retract_5.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the motion primitive that is happening in this video? Think through it step by step and provide an action triplet for each hand in the video.",
+        "video_path": "../Benchmark_1.0/MPs/Stabilize/Stabilize_1.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the motion primitive that is happening in this video? Think through it step by step and provide an action triplet for each hand in the video.",
+        "video_path": "../Benchmark_1.0/MPs/Stabilize/Stabilize_10.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the motion primitive that is happening in this video? Think through it step by step and provide an action triplet for each hand in the video.",
+        "video_path": "../Benchmark_1.0/MPs/Stabilize/Stabilize_2.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the motion primitive that is happening in this video? Think through it step by step and provide an action triplet for each hand in the video.",
+        "video_path": "../Benchmark_1.0/MPs/Stabilize/Stabilize_3.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the motion primitive that is happening in this video? Think through it step by step and provide an action triplet for each hand in the video.",
+        "video_path": "../Benchmark_1.0/MPs/Stabilize/Stabilize_4.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the motion primitive that is happening in this video? Think through it step by step and provide an action triplet for each hand in the video.",
+        "video_path": "../Benchmark_1.0/MPs/Stabilize/Stabilize_5.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the motion primitive that is happening in this video? Think through it step by step and provide an action triplet for each hand in the video.",
+        "video_path": "../Benchmark_1.0/MPs/Stabilize/Stabilize_6.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the motion primitive that is happening in this video? Think through it step by step and provide an action triplet for each hand in the video.",
+        "video_path": "../Benchmark_1.0/MPs/Stabilize/Stabilize_7.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the motion primitive that is happening in this video? Think through it step by step and provide an action triplet for each hand in the video.",
+        "video_path": "../Benchmark_1.0/MPs/Stabilize/Stabilize_8.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the motion primitive that is happening in this video? Think through it step by step and provide an action triplet for each hand in the video.",
+        "video_path": "../Benchmark_1.0/MPs/Stabilize/Stabilize_9.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the motion primitive that is happening in this video? Think through it step by step and provide an action triplet for each hand in the video.",
+        "video_path": "../Benchmark_1.0/MPs/Ungrasp/Ungrasp_1.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the motion primitive that is happening in this video? Think through it step by step and provide an action triplet for each hand in the video.",
+        "video_path": "../Benchmark_1.0/MPs/Ungrasp/Ungrasp_10.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the motion primitive that is happening in this video? Think through it step by step and provide an action triplet for each hand in the video.",
+        "video_path": "../Benchmark_1.0/MPs/Ungrasp/Ungrasp_2.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the motion primitive that is happening in this video? Think through it step by step and provide an action triplet for each hand in the video.",
+        "video_path": "../Benchmark_1.0/MPs/Ungrasp/Ungrasp_3.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the motion primitive that is happening in this video? Think through it step by step and provide an action triplet for each hand in the video.",
+        "video_path": "../Benchmark_1.0/MPs/Ungrasp/Ungrasp_4.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the motion primitive that is happening in this video? Think through it step by step and provide an action triplet for each hand in the video.",
+        "video_path": "../Benchmark_1.0/MPs/Ungrasp/Ungrasp_5.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the motion primitive that is happening in this video? Think through it step by step and provide an action triplet for each hand in the video.",
+        "video_path": "../Benchmark_1.0/MPs/Ungrasp/Ungrasp_6.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the motion primitive that is happening in this video? Think through it step by step and provide an action triplet for each hand in the video.",
+        "video_path": "../Benchmark_1.0/MPs/Ungrasp/Ungrasp_7.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the motion primitive that is happening in this video? Think through it step by step and provide an action triplet for each hand in the video.",
+        "video_path": "../Benchmark_1.0/MPs/Ungrasp/Ungrasp_8.mp4"
+    },
+    {
+        "id": "Benchmarking",
+        "text_prompt": "What is the motion primitive that is happening in this video? Think through it step by step and provide an action triplet for each hand in the video.",
+        "video_path": "../Benchmark_1.0/MPs/Ungrasp/Ungrasp_9.mp4"
+    }
+]
